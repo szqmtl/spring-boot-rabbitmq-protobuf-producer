@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package test;
+
+option java_package = "rshu.springboot.mq.proto";
+option java_outer_classname = "ExchangeData";
+
+message ExchangeDataElement {
+    int64 id = 1;
+    string type = 2;
+    string message = 3;
+}
